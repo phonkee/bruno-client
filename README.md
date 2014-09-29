@@ -3,11 +3,25 @@ Bruno Client
 
 This is the client for [Bruno VoIP system](https://github.com/vhakulinen/bruno-server) and is even more WIP than the server.
 
+With this client, you'll only be able to make voice call. Server support text messages but this client doesnt (atm).
 
 Running it
 ==========
 
 Change the IPs in the source code to your liking (if not running server on localhost) and just `go run client.go`.
+
+When the client is running
+```
+>>> /register <username> <password>
+>>> /login <username> <password>
+>>> /udp_init
+>>> /call <username>
+```
+
+To answer
+```
+>>> /answer
+```
 
 You'll need portaudio to make the calls.
 
